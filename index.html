@@ -1,25 +1,141 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>One More Plate</title><meta name="description" content="A strength training app that plans your next plate. Your training stays on your iPhone."><style>
-:root{--bg:#fbfaf7;--fg:#1b1a17;--muted:#6b675e;--line:#e3dfd6;--accent:#e8590c}
-@media (prefers-color-scheme:dark){:root{--bg:#141311;--fg:#ecebe6;--muted:#a19d93;--line:#2c2a26;--accent:#ff7a33}}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Helvetica Neue","PingFang SC",sans-serif}
-main{max-width:720px;margin:0 auto;padding:40px 16px 80px}
-header{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--line);padding-bottom:12px;margin-bottom:24px;gap:12px;flex-wrap:wrap}
-header a.home{font-weight:700;font-size:18px;color:var(--fg);text-decoration:none}
-nav a{color:var(--muted);margin-left:16px;text-decoration:none}
-nav a:hover,a{color:var(--accent)}
-h1{font-size:30px;line-height:1.2;margin:0 0 8px}
-h2{font-size:22px;margin:48px 0 8px;padding-top:16px;border-top:1px solid var(--line)}
-h3{font-size:17px;margin:28px 0 6px}
-ul{padding-left:20px}
-.muted{color:var(--muted)}
-footer{margin-top:64px;color:var(--muted);font-size:14px;border-top:1px solid var(--line);padding-top:16px}
-</style></head>
-<body><main><header><a class="home" href="/">One More Plate</a><nav><a href="/privacy/">Privacy</a><a href="/support/">Support</a></nav></header>
-<h1>One More Plate</h1>
-<p>A strength training app for iPhone that plans your next workout, set by set, and keeps your training on your phone.</p>
-<p class="muted">Coming soon to the App Store.</p>
-<p><a href="/privacy/">Privacy Policy</a> · <a href="/support/">Support</a></p>
-<footer>© 2026 Zijie Wu · <a href="mailto:support@onemoreplate.app">support@onemoreplate.app</a></footer></main></body></html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>One More Plate · Strength training plans for iPhone</title>
+<meta name="description" content="A strength training app for iPhone that plans your next workout set by set, built for long training cycles. Your training stays on your phone: no account, no server.">
+<meta name="theme-color" content="#F4F3F0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0A0A0B" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body class="home">
+<header class="top"><div class="wrap">
+  <a class="brand" href="/"><img src="/icon-512.png" alt="" width="28" height="28">One More Plate</a>
+  <nav aria-label="Site"><a href="/privacy/">Privacy</a><a href="/support/">Support</a></nav>
+</div></header>
+
+<main class="wrap">
+  <section class="hero">
+    <div class="copy">
+      <img class="icon" src="/icon-512.png" alt="One More Plate app icon: a barbell seen side-on, the last plate in orange" width="72" height="72">
+      <p class="kicker">Strength training for iPhone</p>
+      <h1>Your next workout, planned set by set.</h1>
+      <p class="lede">Built for long training cycles. <strong>Your training stays on your phone:</strong> no account, no server.</p>
+      <p class="soon">Coming soon to the App Store</p>
+    </div>
+
+    <figure class="instrument" aria-label="A twelve-week plan drawn as one bar per week. Week 7 of 12, with 6 to go.">
+      <div class="readout num">
+        <div><span class="big">7<small>/12</small></span><span class="unit">Week</span></div>
+        <div><span class="mid">6</span><span class="unit">To go</span></div>
+        <div><span class="mid">8</span><span class="unit">Next deload</span></div>
+      </div>
+      <div class="wave" aria-hidden="true">
+        <span class="done" style="--h:70%"></span>
+        <span class="done" style="--h:78%"></span>
+        <span class="done" style="--h:86%"></span>
+        <span class="light" style="--h:48%"></span>
+        <span class="done" style="--h:74%"></span>
+        <span class="done" style="--h:82%"></span>
+        <span class="now" style="--h:90%"></span>
+        <span class="light plan" style="--h:50%"></span>
+        <span class="plan" style="--h:78%"></span>
+        <span class="plan" style="--h:86%"></span>
+        <span class="plan" style="--h:95%"></span>
+        <span class="light plan" style="--h:54%"></span>
+      </div>
+      <div class="wave-axis num" aria-hidden="true"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span class="is-now">7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span></div>
+      <figcaption class="legend"><span><i class="k-done"></i>Done</span><span><i class="k-now"></i>This week</span><span><i class="k-plan"></i>Planned</span><span><i class="k-light"></i>Deload</span></figcaption>
+    </figure>
+  </section>
+
+  <section class="feature">
+    <div class="copy">
+      <span class="idx num">01 · The plan</span>
+      <h2>Every set, already worked out.</h2>
+      <p>Answer a few questions about your goal and how many days a week you train, or pick a classic program by the name lifters know it by. A plan runs twelve weeks with its deloads planned in.</p>
+      <p>Each workout arrives with <strong>the weight and reps for every set</strong>, down to the plates to put on the bar.</p>
+      <ul class="chips" aria-label="Goals"><li>Hypertrophy</li><li>Strength</li><li>Hybrid</li><li>Toning</li><li>Glutes and legs</li></ul>
+    </div>
+    <div class="demo" aria-label="Example: squat, 87.5 kilograms for 5 reps">
+      <span class="unit">Squat · Set 1 of 3</span>
+      <div class="load num"><b>87.5</b><span class="unit">kg × 5</span></div>
+      <p class="reason">All 3×5 done last time, so the weight goes up</p>
+      <p class="last num">Last time 85 × 5</p>
+      <div class="plates" aria-hidden="true"><span class="collar"></span><span class="p25"></span><span class="p5"></span><span class="p2"></span><span class="p1"></span></div>
+      <div class="plate-cap num"><span>25 + 5 + 2.5 + <em>1.25</em> kg a side</span><span>One more plate</span></div>
+    </div>
+  </section>
+
+  <section class="feature flip">
+    <div class="copy">
+      <span class="idx num">02 · The days</span>
+      <h2>Miss a day, not the plan.</h2>
+      <p>Days aren’t tied to weekdays. Today always shows <strong>the next workout you haven’t done</strong>, so a missed Monday just waits for you.</p>
+      <p>Rack taken? Train another day of the week first. Skip one on purpose and undo it later. Back after time off, the weights ease back in.</p>
+    </div>
+    <div class="demo" aria-label="Example week: day 1 done, day 2 skipped, day 3 next, day 4 planned">
+      <span class="unit">This week</span>
+      <ul class="days">
+        <li><span class="mark m-done"></span><span class="d">Day 1</span><span class="lift">Squat</span><span class="tag">Done</span></li>
+        <li><span class="mark m-skip"></span><span class="d">Day 2</span><span class="lift">Bench</span><span class="tag">Skipped</span></li>
+        <li><span class="mark m-now"></span><span class="d">Day 3</span><span class="lift">Deadlift</span><span class="tag now">Next</span></li>
+        <li><span class="mark m-plan"></span><span class="d">Day 4</span><span class="lift">Press</span><span class="tag">Planned</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="feature">
+    <div class="copy">
+      <span class="idx num">03 · The workout</span>
+      <h2>One tap per set.</h2>
+      <p>Warm-ups are laid out before your first work set. Each work set has its weight and reps filled in, so <strong>one tap logs it</strong> and the rest timer starts on its own.</p>
+      <p>Changing the weight, the reps or the exercise is there when you need it, and out of the way when you don’t.</p>
+    </div>
+    <div class="demo" aria-label="Example: two squat sets logged, resting, third set ready to log">
+      <div class="rest num"><b>1:42</b><span class="unit">Rest</span></div>
+      <ul class="sets num">
+        <li class="warm"><span class="n">Warm</span><span class="v">60 × 5</span><span></span></li>
+        <li><span class="n">Set 1</span><span class="v">87.5<small>kg</small> × 5</span><span class="ok"><svg viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7"/></svg></span></li>
+        <li><span class="n">Set 2</span><span class="v">87.5<small>kg</small> × 5</span><span class="ok"><svg viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7"/></svg></span></li>
+        <li><span class="n">Set 3</span><span class="v">87.5<small>kg</small> × 5</span><span class="log">Log set</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="feature flip">
+    <div class="copy">
+      <span class="idx num">04 · The reasons</span>
+      <h2>Every weight comes with its reason.</h2>
+      <p>Next time follows your plan and what you actually lifted. Hit your reps and the weight goes up; fall short and it holds.</p>
+      <p>Ask why any weight is what it is, and the app shows <strong>the rule behind it, in plain words</strong>.</p>
+    </div>
+    <div class="demo why">
+      <h3 class="num">Why 87.5 kg</h3>
+      <p>All 3×5 done last time, so the weight goes up.</p>
+      <p class="rule">Three sets of 5 at one weight. When all 15 reps are done, it goes up 2.5 kg next time. A set short of 5, or lighter than planned, keeps the weight; two sessions like that in a row take it down 10% to build back up.</p>
+    </div>
+  </section>
+
+  <section class="founder">
+    <blockquote>Made by one lifter. <span>No investors, no server, no account: your training stays on your phone.</span></blockquote>
+    <div class="nos"><div><b>No</b><span class="unit">Account</span></div><div><b>No</b><span class="unit">Server</span></div><div><b>No</b><span class="unit">Tracking</span></div></div>
+    <p>Back up to Files whenever you like, and send your workouts to Apple Health if you turn it on. Nothing leaves your phone unless you send it. Read the <a href="/privacy/">privacy policy</a>.</p>
+  </section>
+
+  <section class="closing">
+    <img src="/icon-512.png" alt="" width="96" height="96">
+    <h2>One More Plate</h2>
+    <p>Coming soon to the App Store, for iPhone.</p>
+  </section>
+</main>
+
+<footer class="foot"><div class="wrap">
+  <span>© 2026 Zijie Wu · <a href="mailto:support@onemoreplate.app">support@onemoreplate.app</a></span>
+  <nav aria-label="Footer"><a href="/privacy/">Privacy</a><a href="/support/">Support</a></nav>
+</div></footer>
+</body>
+</html>
