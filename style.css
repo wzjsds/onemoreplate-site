@@ -39,7 +39,7 @@ a:hover{text-decoration-color:var(--t1)}
 .foot{border-top:1px solid var(--sep);margin-top:56px}
 .foot .wrap{padding-top:20px;padding-bottom:40px;color:var(--t2);font-size:13px;display:flex;flex-wrap:wrap;gap:6px 16px;justify-content:space-between}
 .foot a{color:var(--t2)}
-.foot nav{display:flex;gap:16px}
+.foot nav{display:flex;flex-wrap:wrap;gap:6px 16px}
 
 /* ---------- Home ---------- */
 .hero{padding:40px 0 8px}
